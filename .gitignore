@@ -1,0 +1,5 @@
+/*.jar
+/scripts/clean.bash
+/scripts/run.bash
+/scripts/stop.bash
+/tap-data/
