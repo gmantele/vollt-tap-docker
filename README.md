@@ -93,7 +93,7 @@ scripts/stop.bash
    2. To restart the previous container:
 
       ```bash
-      docker start taptest # , where 'taptest' has to be the chosen container name
+      docker start vollt-tap # , where 'vollt-tap' has to be the chosen container name
       ```
 
       All logs, backups and result files are preserved too. However, modifications of any configuration file will be ignore.
@@ -142,10 +142,10 @@ The container name, image name, the version and the Tomcat's HTTP port are set w
 
 To change one or more of them, change the corresponding variable in `scripts/build.bash`:
 
-- `IMAGE_NAME` _(default: `taptest`)_
+- `IMAGE_NAME` _(default: `vollt-tap`)_
 - `CONTAINER_NAME` _(default: same as `IMAGE_NAME`)_
 - `SHORT_VERSION` _(default: `0.1`)_
-- `LONG_VERSION` _(default: `SHORT_VERSION` followed by `--vollt-tap-2.3`)_
+- `LONG_VERSION` _(default: `SHORT_VERSION` followed by `--vollt-tap-2.4beta`)_
 - `TOMCAT_PORT` _(default: `8080`)_
 
 
@@ -203,10 +203,10 @@ By default:
 
 ```bash
 # To start a container (if already created before):
-docker start taptest
+docker start vollt-tap
 
 # To stop a container:
-docker stop taptest
+docker stop vollt-tap
 
 # To list active containers:
 docker ps
@@ -215,15 +215,15 @@ docker ps
 docker ps -a
 
 # To see the status of a specific container:
-docker ps -a -f name='taptest'
+docker ps -a -f name='vollt-tap'
 
 # To list Docker images:
 docker images
 
 # To remove a container:
-docker rm taptest
+docker rm vollt-tap
 
 # To remove an image/tag:
-docker rm taptest:latest taptest:
+docker rm vollt-tap:latest vollt-tap:
 ```
 
