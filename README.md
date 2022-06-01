@@ -168,11 +168,11 @@ By default:
 [...]
 	<servlet>
         <display-name>TAP Test Service</display-name>
-        <servlet-name>testtap</servlet-name>
+        <servlet-name>tap</servlet-name>
         <servlet-class>tap.config.ConfigurableTAPServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>testtap</servlet-name>
+        <servlet-name>tap</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
 [...]
